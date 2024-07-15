@@ -1,0 +1,76 @@
+﻿<Window x:Class="evaluationUA1CalculatriceKhoudali.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:evaluationUA1CalculatriceKhoudali"
+        mc:Ignorable="d" 
+        Title="Calculatrice" Height="450" Width="200"
+        WindowStyle="None" 
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Beige"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+
+
+    <Border Background="Black" CornerRadius="25">
+
+
+        <Grid Height="450" VerticalAlignment="Bottom"  >
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+            <TextBox x:Name="tbResult" Text="0" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Right"  
+               VerticalAlignment="Bottom" FontSize="40" Background="Black" Foreground="White" BorderThickness="0" BorderBrush="Transparent"/>
+
+            <Button x:Name="btnClose" Style="{StaticResource buttonStyle0}" Grid.Column="4" Width="25" Height="25" Click="btnClose_Click" VerticalAlignment="Top" Margin="0,10,-5,0">
+            <Image Source="/close.png"></Image>
+        </Button>
+
+            <Button x:Name="FactorialBtn" Style="{StaticResource buttonStyle1}" Content="!" Grid.Row="3" Width="50" Height="50" Click="FactorialBtn_Click"></Button>
+            <Button x:Name="InverseBtn" Style="{StaticResource buttonStyle1}" Content="1/x" Grid.Row="3" Grid.Column="1" Width="50" Height="50" Click="InverseBtn_Click"></Button>
+            <Button x:Name="SquareBtn" Style="{StaticResource buttonStyle1}" Content="x2" Grid.Row="3" Grid.Column="2" Width="50" Height="50" Click="SquareBtn_Click"></Button>
+            <Button x:Name="SquareRootBtn" Style="{StaticResource buttonStyle1}" Content="√" Grid.Row="3" Grid.Column="3" Width="50" Height="50" Click="SquareRootBtn_Click"></Button>
+            <Button x:Name="AllClearBtn" Style="{StaticResource buttonStyle1}" Content="AC" Grid.Row="4" Width="50" Height="50" Click="AllClearBtn_Click"></Button>
+            <Button x:Name="SignChangeBtn" Style="{StaticResource buttonStyle1}" Content="+/-" Grid.Row="4" Grid.Column="1" Width="50" Height="50" Click="SignChangeBtn_Click"></Button>
+            <Button x:Name="PercentageBtn" Style="{StaticResource buttonStyle1}" Content="%" Grid.Row="4" Grid.Column="2" Width="50" Height="50" Click="PercentageBtn_Click"></Button>
+            <Button x:Name="DivisionBtn" Style="{StaticResource buttonStyle2}" Content="/" Grid.Row="4" Grid.Column="3" Width="50" Height="50" Click="DivisionBtn_Click"></Button>
+            <Button x:Name="Number7Btn" Style="{StaticResource buttonStyle3}" Content="7" Grid.Row="5" Width="50" Height="50" Click="Number7Btn_Click"></Button>
+            <Button x:Name="Number8Btn" Style="{StaticResource buttonStyle3}" Content="8" Grid.Row="5" Grid.Column="1" Width="50" Height="50" Click="Number8Btn_Click"></Button>
+            <Button x:Name="Number9Btn" Style="{StaticResource buttonStyle3}" Content="9" Grid.Row="5" Grid.Column="2" Width="50" Height="50" Click="Number9Btn_Click"></Button>
+            <Button x:Name="MultiplicationBtn" Style="{StaticResource buttonStyle2}" Content="X" Grid.Row="5" Grid.Column="3" Width="50" Height="50" Click="MultiplicationBtn_Click"></Button>
+            <Button x:Name="Number4Btn" Style="{StaticResource buttonStyle3}" Content="4" Grid.Row="6" Width="50" Height="50" Click="Number4Btn_Click"></Button>
+            <Button x:Name="Number5Btn" Style="{StaticResource buttonStyle3}" Content="5" Grid.Row="6" Grid.Column="1" Width="50" Height="50" Click="Number5Btn_Click"></Button>
+            <Button x:Name="Number6Btn" Style="{StaticResource buttonStyle3}" Content="6" Grid.Row="6" Grid.Column="2" Width="50" Height="50" Click="Number6Btn_Click"></Button>
+            <Button x:Name="SubtractionBtn" Style="{StaticResource buttonStyle2}" Content="-" Grid.Row="6" Grid.Column="3" Width="50" Height="50" Click="SubtractionBtn_Click"></Button>
+            <Button x:Name="Number1Btn" Style="{StaticResource buttonStyle3}" Content="1" Grid.Row="7" Width="50" Height="50" Click="Number1Btn_Click"></Button>
+            <Button x:Name="Number2Btn" Style="{StaticResource buttonStyle3}" Content="2" Grid.Row="7" Grid.Column="1" Width="50" Height="50" Click="Number2Btn_Click"></Button>
+            <Button x:Name="Number3Btn" Style="{StaticResource buttonStyle3}" Content="3" Grid.Row="7" Grid.Column="2" Width="50" Height="50" Click="Number3Btn_Click"></Button>
+            <Button x:Name="AdditionBtn" Style="{StaticResource buttonStyle2}" Content="+" Grid.Row="7" Grid.Column="3" Width="50" Height="50" Click="AdditionBtn_Click"></Button>
+            <Button x:Name="Number0Btn" Style="{StaticResource buttonStyle4}" Content="0" Grid.Row="8" Grid.ColumnSpan="2" Width="100" Height="45" Margin="0" Click="Number0Btn_Click"></Button>
+            <Button x:Name="DecimalBtn" Style="{StaticResource buttonStyle3}" Content="." Grid.Row="8" Grid.Column="2" Width="50" Height="50" Click="DecimalBtn_Click"></Button>
+            <Button x:Name="EqualsBtn" Style="{StaticResource buttonStyle2}" Content="=" Grid.Row="8" Grid.Column="3" Width="50" Height="50" Click="EqualsBtn_Click"></Button>
+        </Grid>
+
+    </Border>
+    
+    
+</Window>
